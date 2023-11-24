@@ -15,7 +15,6 @@ public class BancoDeDados {
 
     public void conectar() {
         try {
-            // Caminho do banco de dados SQLite
             String url = "jdbc:sqlite:projetoFinal.db";
             conexao = DriverManager.getConnection(url);
 
@@ -42,7 +41,6 @@ public class BancoDeDados {
         }
     }
 
-    // Método para fechar a conexão
     public void fecharConexao() {
         try {
             if (conexao != null) {
